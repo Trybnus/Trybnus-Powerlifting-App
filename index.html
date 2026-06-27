@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Trybnus" />
+  <title>Trybnus Fitness</title>
+  <link rel="apple-touch-icon" href="data:image/jpeg;base64,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" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { height: 100%; background: #0a0a0b; overflow: hidden; }
+    #root { height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+  </style>
+</head>
+<body>
+  <div id="root"><div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0a0a0b;color:#FF5722;font-family:system-ui;font-size:14px;letter-spacing:2px;">LOADING...</div></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.8.0/Recharts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+
+  <script>
+  // Storage backed by localStorage
+  window.storage = {
+    get: (k) => { try { const v=localStorage.getItem(k); return Promise.resolve(v?{key:k,value:v}:null); } catch(e){return Promise.resolve(null);} },
+    set: (k,v) => { try { localStorage.setItem(k,v); return Promise.resolve({key:k,value:v}); } catch(e){return Promise.resolve(null);} },
+    delete: (k) => { try { localStorage.removeItem(k); return Promise.resolve({key:k,deleted:true}); } catch(e){return Promise.resolve(null);} }
+  };
+
+  // Lucide icon shims
+  function mkIcon(d){
+    return function(props){
+      const size=props.size||24, color=props.color||'currentColor', sw=props.strokeWidth||2;
+      const paths=d.split('|').map((p,i)=>React.createElement('path',{key:i,d:p}));
+      return React.createElement('svg',{xmlns:'http://www.w3.org/2000/svg',width:size,height:size,viewBox:'0 0 24 24',fill:'none',stroke:color,strokeWidth:sw,strokeLinecap:'round',strokeLinejoin:'round'},paths);
+    };
+  }
+  const Home=mkIcon('M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z|M9 22V12h6v10');
+  const Dumbbell=mkIcon('M6.5 6.5h11|M6.5 17.5h11|M3 12h18|M5 8.5v7|M19 8.5v7|M2 10v4|M22 10v4');
+  const Calculator=mkIcon('M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z|M8 6h.01|M12 6h.01|M16 6h.01|M8 10h.01|M12 10h.01|M16 10h.01|M8 14h.01|M12 14h.01|M8 18h8');
+  const TrendingUp=mkIcon('M23 6l-9.5 9.5-5-5L1 18|M17 6h6v6');
+  const BookOpen=mkIcon('M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z|M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z');
+  const Play=mkIcon('M5 3l14 9-14 9V3z');
+  const Pause=mkIcon('M6 4h4v16H6z|M14 4h4v16h-4z');
+  const RotateCcw=mkIcon('M1 4v6h6|M3.51 15a9 9 0 1 0 .49-3.51');
+  const Plus=mkIcon('M12 5v14|M5 12h14');
+  const Trash2=mkIcon('M3 6h18|M19 6l-1 14H6L5 6|M8 6V4h8v2|M10 11v6|M14 11v6');
+  const Check=mkIcon('M20 6L9 17l-5-5');
+  const ChevronRight=mkIcon('M9 18l6-6-6-6');
+  const X=mkIcon('M18 6L6 18|M6 6l12 12');
+  const Settings=mkIcon('M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z|M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z');
+  const Flame=mkIcon('M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z');
+  const Trophy=mkIcon('M6 9H4.5a2.5 2.5 0 0 1 0-5H6|M18 9h1.5a2.5 2.5 0 0 0 0-5H18|M4 22h16|M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22|M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22|M18 2H6v7a6 6 0 0 0 12 0V2z');
+  const Target=mkIcon('M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z|M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z|M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z');
+  const Award=mkIcon('M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z|M8.21 13.89L7 23l5-3 5 3-1.21-9.12');
+  const Clock=mkIcon('M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z|M12 6v6l4 2');
+  const Edit3=mkIcon('M12 20h9|M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z');
+  </script>
+
+  <script type="text/babel">
+  const { useState, useEffect, useRef } = React;
+  const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } = Recharts;
+
+
+// ============ FORMULAS ============
+const calc1RM = (w, r) => r === 1 ? w : Math.round(w * (1 + r / 30));
+const calcBrzycki = (w, r) => r === 1 ? w : Math.round(w * 36 / (37 - r));
+const calcLombardi = (w, r) => Math.round(w * Math.pow(r, 0.10));
+const round5 = n => Math.round(n / 5) * 5;
+
+// ============ STORAGE KEYS ============
+const K = {
+  RMS: 'iron_one_rms_v1',
+  WK: 'iron_workouts_v1',
+  PR: 'iron_pr_history_v1',
+  ST: 'iron_settings_v1',
+  AP: 'iron_active_program_v1'
+};
+
+const DEFAULT_PLATES = [45, 35, 25, 10, 5, 2.5];
+const ACCESSORIES = {
+  squat: ['Front Squat', 'Pause Squat', 'Tempo Squat', 'Leg Press', 'Bulgarian Split Squat', 'Walking Lunge', 'Leg Curl', 'Calf Raise'],
+  bench: ['Close-Grip Bench', 'Incline Bench', 'Overhead Press', 'DB Bench', 'Dips', 'Tricep Pushdown', 'Skull Crusher', 'Lateral Raise'],
+  deadlift: ['Deficit Deadlift', 'Pause Deadlift', 'Romanian Deadlift', 'Barbell Row', 'Pendlay Row', 'Pull-Up', 'Good Morning', 'Hyperextension']
+};
+
+const PROGRAMS = [
+  { id: '531', name: '5/3/1', author: 'Jim Wendler', desc: '4-day program. Submaximal training built around 90% of true 1RM. Slow, sustainable progression — add 5 lb upper / 10 lb lower per cycle.', days: 4, weeks: 4 },
+  { id: 'ss', name: 'Starting Strength', author: 'Mark Rippetoe', desc: 'Linear progression for novices. 3x5 on the main lifts, add 5 lb every session until stalled. Brutal but it works.', days: 3, weeks: 12 },
+  { id: 'tm', name: 'Texas Method', author: 'Mark Rippetoe', desc: 'Intermediate transition. Volume Monday, recovery Wednesday, intensity (new PR) Friday. Built for stalling novices.', days: 3, weeks: 8 },
+  { id: 'sh', name: 'Sheiko #29', author: 'Boris Sheiko', desc: 'High-volume Russian template. Lots of sub-maximal triples and doubles. Punishing but builds technique.', days: 4, weeks: 8 },
+  { id: 'sm', name: 'Smolov Jr.', author: 'Sergey Smolov', desc: 'Three-week bench specialization (or squat). 4x/week brutal volume. Run once or twice a year, not more.', days: 4, weeks: 3 },
+  { id: 'cb', name: 'Conjugate', author: 'Westside Barbell', desc: 'Max effort + dynamic effort split. Rotates main lifts weekly. For advanced lifters with strong technique.', days: 4, weeks: 0 }
+];
+
+const FORM_TIPS = {
+  squat: [
+    'Brace 360° — air into the belly, push out against the belt.',
+    'Bar high or low — pick one and stay consistent. Low bar = more posterior chain.',
+    'Knees track over toes. Push the floor apart with your feet.',
+    'Hips and shoulders rise together out of the hole. No good morning.',
+    'Eyes forward or slightly down. Chasing the ceiling kills hip drive.'
+  ],
+  bench: [
+    'Upper back tight, shoulder blades pinched and packed into the bench.',
+    'Feet planted. Drive the heels into the floor, not the toes.',
+    'Bar path is a J — touch low on the sternum, press back over the shoulders.',
+    'Tuck elbows ~45° to 75° from torso. Flared elbows wreck shoulders.',
+    'Hold the air at the chest, then press hard. Exhale at lockout, not before.'
+  ],
+  deadlift: [
+    'Bar over mid-foot. Always. Set up here every time.',
+    'Pull the slack out — hard pre-tension before the bar leaves the floor.',
+    'Lats engaged. Think "protect the armpits" or "bend the bar around you."',
+    'Push the floor away. The deadlift is a leg drive that finishes with hips.',
+    'Lock out by squeezing glutes. Do not hyperextend the lower back.'
+  ]
+};
+
+// ============ 5/3/1 ENGINE ============
+const FIVE_THREE_ONE = {
+  1: [{ pct: 65, reps: 5 }, { pct: 75, reps: 5 }, { pct: 85, reps: 5, amrap: true }],
+  2: [{ pct: 70, reps: 3 }, { pct: 80, reps: 3 }, { pct: 90, reps: 3, amrap: true }],
+  3: [{ pct: 75, reps: 5 }, { pct: 85, reps: 3 }, { pct: 95, reps: 1, amrap: true }],
+  4: [{ pct: 40, reps: 5 }, { pct: 50, reps: 5 }, { pct: 60, reps: 5 }]
+};
+
+const SBD_LIFTS = {
+  press: { key: 'press', label: 'Overhead Press', short: 'PRESS' },
+  deadlift: { key: 'deadlift', label: 'Deadlift', short: 'DEAD' },
+  bench: { key: 'bench', label: 'Bench Press', short: 'BENCH' },
+  squat: { key: 'squat', label: 'Squat', short: 'SQUAT' }
+};
+
+const LIFT_ORDERS = {
+  wendler: { name: 'Wendler', desc: 'Press → Deadlift → Bench → Squat', days: ['press', 'deadlift', 'bench', 'squat'] },
+  squatFirst: { name: 'Squat First', desc: 'Squat → Bench → Deadlift → Press', days: ['squat', 'bench', 'deadlift', 'press'] },
+  powerlifting: { name: 'Powerlifting · 3-day', desc: 'Squat → Bench → Deadlift', days: ['squat', 'bench', 'deadlift'] }
+};
+
+const getProgramDays = (orderKey) => {
+  const order = LIFT_ORDERS[orderKey] || LIFT_ORDERS.wendler;
+  return order.days.map(k => SBD_LIFTS[k]);
+};
+
+const PLATE_COLORS = { 45: '#1e40af', 35: '#facc15', 25: '#16a34a', 10: '#f5f5f0', 5: '#dc2626', 2.5: '#a1a1aa' };
+const plateColor = (p) => PLATE_COLORS[p] || '#71717a';
+
+const calculatePlates = (target, barWeight, availablePlates) => {
+  if (target <= barWeight) return { perSide: 0, plates: [], leftover: 0 };
+  const perSide = (target - barWeight) / 2;
+  const sorted = [...availablePlates].sort((a, b) => b - a);
+  const result = [];
+  let remaining = perSide;
+  for (const p of sorted) {
+    while (remaining >= p - 0.001) {
+      result.push(p);
+      remaining -= p;
+    }
+  }
+  return { perSide, plates: result, leftover: remaining };
+};
+
+const ASSISTANCE_TEMPLATES = {
+  none: { name: 'None', desc: 'Main work only. Log accessories on the Train tab.' },
+  bbb: {
+    name: 'Boring But Big',
+    desc: '5×10 of the main lift at 50% of TM. Volume hammer.',
+    build: (lift, tm) => ([{ exercise: lift.label, sets: 5, reps: 10, weight: round5(tm * 0.5), note: '50% TM' }])
+  },
+  fsl: {
+    name: 'First Set Last',
+    desc: "3-5 sets of 5 at the day's first working weight.",
+    build: (lift, tm, week) => {
+      const firstPct = FIVE_THREE_ONE[week] ? FIVE_THREE_ONE[week][0].pct : 65;
+      return [{ exercise: lift.label, sets: 3, reps: 5, weight: round5(tm * firstPct / 100), note: `${firstPct}% TM` }];
+    }
+  },
+  triumvirate: {
+    name: 'Triumvirate',
+    desc: 'Two complementary exercises per day, 5 sets each.',
+    build: (lift) => {
+      const pairs = {
+        squat: [{ exercise: 'Leg Press', sets: 5, reps: 15 }, { exercise: 'Leg Curl', sets: 5, reps: 10 }],
+        bench: [{ exercise: 'DB Bench', sets: 5, reps: 15 }, { exercise: 'Barbell Row', sets: 5, reps: 10 }],
+        deadlift: [{ exercise: 'Good Morning', sets: 5, reps: 12 }, { exercise: 'Hanging Leg Raise', sets: 5, reps: 15 }],
+        press: [{ exercise: 'Dips', sets: 5, reps: 15 }, { exercise: 'Chin-Up', sets: 5, reps: 10 }]
+      };
+      return pairs[lift.key] || [];
+    }
+  }
+};
+
+const computeTM = (oneRM) => Math.floor((oneRM * 0.9) / 5) * 5;
+const estimatePressTM = (benchTM) => Math.floor((benchTM * 0.65) / 5) * 5;
+
+const get531Sets = (week, tm) =>
+  FIVE_THREE_ONE[week].map(s => ({ weight: round5(tm * s.pct / 100), reps: s.reps, pct: s.pct, amrap: s.amrap }));
+
+const getNextWorkout = (active) => {
+  if (!active) return null;
+  const days = getProgramDays(active.liftOrder);
+  const daysPerWeek = days.length;
+  const completed = active.completedDays || [];
+  const totalDays = completed.length;
+  const skip = !!active.skipDeloads;
+  const weeksPerCycle = skip ? 3 : 4;
+  const daysPerCycle = daysPerWeek * weeksPerCycle;
+  const cycle = Math.floor(totalDays / daysPerCycle) + 1;
+  const inCycle = totalDays % daysPerCycle;
+  const week = Math.floor(inCycle / daysPerWeek) + 1;
+  const dayIndex = inCycle % daysPerWeek;
+  const lastReviewed = active.lastReviewedCycle || 0;
+  const cyclesCompleted = Math.floor(totalDays / daysPerCycle);
+  const needsReview = cyclesCompleted > lastReviewed;
+  return { cycle, week, dayIndex, lift: days[dayIndex], days, daysPerWeek, daysPerCycle, weeksPerCycle, needsReview, cyclesCompleted };
+};
+
+const CHALLENGES = [
+  { name: '1000 lb Club', tier: 'Bronze', target: 1000, desc: 'Combined SBD total. Entry-level milestone.' },
+  { name: '1500 lb Club', tier: 'Silver', target: 1500, desc: 'Combined SBD total. Strong intermediate.' },
+  { name: '2x Bodyweight Squat', tier: 'Squat', target: 'BW×2', desc: 'Squat double your bodyweight for a single.' },
+  { name: '1.5x Bodyweight Bench', tier: 'Bench', target: 'BW×1.5', desc: 'Bench 150% of bodyweight for a single.' },
+  { name: '2.5x Bodyweight Deadlift', tier: 'Deadlift', target: 'BW×2.5', desc: 'Pull 250% of bodyweight off the floor.' },
+  { name: '4 Plates Each Side', tier: 'Squat/DL', target: 405, desc: 'Squat or deadlift 405 lb — 4 plates per side.' }
+];
+
+// ============ MAIN APP ============
+function App() {
+  const [tab, setTab] = useState('home');
+  const [loaded, setLoaded] = useState(false);
+
+  const [oneRMs, setOneRMs] = useState({ squat: 0, bench: 0, deadlift: 0 });
+  const [workouts, setWorkouts] = useState([]);
+  const [prHistory, setPrHistory] = useState([]);
+  const [settings, setSettings] = useState({ plates: DEFAULT_PLATES, barWeight: 45, unit: 'lb', bodyweight: 0 });
+  const [activeProgram, setActiveProgram] = useState(null);
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+  }, []);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const [rms, wks, pr, st, ap] = await Promise.all([
+          window.storage.get(K.RMS).catch(() => null),
+          window.storage.get(K.WK).catch(() => null),
+          window.storage.get(K.PR).catch(() => null),
+          window.storage.get(K.ST).catch(() => null),
+          window.storage.get(K.AP).catch(() => null)
+        ]);
+        if (rms?.value) setOneRMs(JSON.parse(rms.value));
+        if (wks?.value) setWorkouts(JSON.parse(wks.value));
+        if (pr?.value) setPrHistory(JSON.parse(pr.value));
+        if (st?.value) setSettings(prev => ({ ...prev, ...JSON.parse(st.value) }));
+        if (ap?.value) setActiveProgram(JSON.parse(ap.value));
+      } catch (e) {
+        console.error('Load failed', e);
+      } finally {
+        setLoaded(true);
+      }
+    })();
+  }, []);
+
+  const save1RMs = async (next, recordHistory = true) => {
+    setOneRMs(next);
+    try { await window.storage.set(K.RMS, JSON.stringify(next)); } catch (e) {}
+    if (recordHistory) {
+      const entry = {
+        date: new Date().toISOString(),
+        squat: next.squat || 0,
+        bench: next.bench || 0,
+        deadlift: next.deadlift || 0,
+        total: (next.squat || 0) + (next.bench || 0) + (next.deadlift || 0)
+      };
+      const updated = [...prHistory, entry];
+      setPrHistory(updated);
+      try { await window.storage.set(K.PR, JSON.stringify(updated)); } catch (e) {}
+    }
+  };
+
+  const saveWorkout = async (w) => {
+    const updated = [w, ...workouts].slice(0, 100);
+    setWorkouts(updated);
+    try { await window.storage.set(K.WK, JSON.stringify(updated)); } catch (e) {}
+  };
+
+  const deleteWorkout = async (id) => {
+    const updated = workouts.filter(w => w.id !== id);
+    setWorkouts(updated);
+    try { await window.storage.set(K.WK, JSON.stringify(updated)); } catch (e) {}
+  };
+
+  const saveSettings = async (next) => {
+    setSettings(next);
+    try { await window.storage.set(K.ST, JSON.stringify(next)); } catch (e) {}
+  };
+
+  const saveActiveProgram = async (next) => {
+    setActiveProgram(next);
+    try {
+      if (next === null) await window.storage.delete(K.AP);
+      else await window.storage.set(K.AP, JSON.stringify(next));
+    } catch (e) {}
+  };
+
+  const completeProgramDay = async (sets, liftKey) => {
+    if (!activeProgram) return;
+    const next = getNextWorkout(activeProgram);
+    const isAmrapWeek = next.week !== 4;
+    const amrapSet = isAmrapWeek ? sets[sets.length - 1] : null;
+    const amrapReps = amrapSet && typeof amrapSet.actualReps === 'number' ? amrapSet.actualReps : null;
+
+    const completedDays = [...(activeProgram.completedDays || []), {
+      cycle: next.cycle, week: next.week, dayIndex: next.dayIndex,
+      date: new Date().toISOString()
+    }];
+
+    const amrap = { ...(activeProgram.amrapPerformance || {}) };
+    if (amrapReps && amrapSet) {
+      const entry = {
+        cycle: next.cycle, week: next.week,
+        weight: amrapSet.weight, reps: amrapReps,
+        est1RM: calc1RM(amrapSet.weight, amrapReps),
+        date: new Date().toISOString()
+      };
+      amrap[liftKey] = [...(amrap[liftKey] || []), entry];
+    }
+
+    await saveActiveProgram({ ...activeProgram, completedDays, amrapPerformance: amrap });
+
+    await saveWorkout({
+      id: Date.now().toString(),
+      date: new Date().toISOString(),
+      exercise: next.lift.label,
+      sets: sets.map(s => ({ weight: s.weight, reps: typeof s.actualReps === 'number' ? s.actualReps : s.reps, rpe: null })),
+      programTag: `5/3/1 C${next.cycle}W${next.week}`
+    });
+  };
+
+  const total = (oneRMs.squat || 0) + (oneRMs.bench || 0) + (oneRMs.deadlift || 0);
+
+  return (
+    <div style={styles.app}>
+      <style>{globalCSS}</style>
+      <main style={styles.main}>
+        {!loaded ? (
+          <div style={{ padding: 40, textAlign: 'center', color: '#71717a' }}>Loading...</div>
+        ) : (
+          <>
+            {tab === 'home' && <HomeView oneRMs={oneRMs} setOneRMs={save1RMs} total={total} workouts={workouts} settings={settings} activeProgram={activeProgram} completeProgramDay={completeProgramDay} saveActiveProgram={saveActiveProgram} />}
+            {tab === 'train' && <TrainView saveWorkout={saveWorkout} workouts={workouts} deleteWorkout={deleteWorkout} oneRMs={oneRMs} settings={settings} />}
+            {tab === 'tools' && <ToolsView settings={settings} saveSettings={saveSettings} oneRMs={oneRMs} />}
+            {tab === 'progress' && <ProgressView prHistory={prHistory} workouts={workouts} settings={settings} />}
+            {tab === 'library' && <LibraryView settings={settings} saveSettings={saveSettings} total={total} oneRMs={oneRMs} activeProgram={activeProgram} saveActiveProgram={saveActiveProgram} />}
+          </>
+        )}
+      </main>
+
+      <nav style={styles.nav}>
+        {[
+          { id: 'home', label: 'Home', Icon: Home },
+          { id: 'train', label: 'Train', Icon: Dumbbell },
+          { id: 'tools', label: 'Tools', Icon: Calculator },
+          { id: 'progress', label: 'Progress', Icon: TrendingUp },
+          { id: 'library', label: 'Library', Icon: BookOpen }
+        ].map(({ id, label, Icon }) => (
+          <button key={id} onClick={() => setTab(id)} style={{ ...styles.navBtn, color: tab === id ? '#FF5722' : '#71717a' }}>
+            <Icon size={20} strokeWidth={2.5} />
+            <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: 0.5, textTransform: 'uppercase' }}>{label}</span>
+          </button>
+        ))}
+      </nav>
+    </div>
+  );
+}
+
+// ============ HOME ============
+function HomeView({ oneRMs, setOneRMs, total, workouts, settings, activeProgram, completeProgramDay, saveActiveProgram }) {
+  const [edit, setEdit] = useState(null);
+  const [val, setVal] = useState('');
+  const recent = workouts.slice(0, 3);
+
+  const startEdit = (lift) => {
+    setEdit(lift);
+    setVal(String(oneRMs[lift] || ''));
+  };
+
+  const commit = () => {
+    const n = parseInt(val) || 0;
+    if (edit) setOneRMs({ ...oneRMs, [edit]: n });
+    setEdit(null);
+    setVal('');
+  };
+
+  return (
+    <div style={{ padding: '24px 20px 100px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
+        <img src="data:image/jpeg;base64,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" alt="Trybnus" style={{ width: 48, height: 48, objectFit: 'contain' }} />
+        <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 22, letterSpacing: 2, color: '#f5f5f0' }}>TRYBNUS</div>
+      </div>
+      <div style={{ marginBottom: 8 }}>
+        <div style={styles.eyebrow}>TOTAL</div>
+        <div style={styles.bigTotal}>{total || '—'}</div>
+        <div style={{ fontSize: 11, color: '#71717a', letterSpacing: 1.5, marginTop: -4 }}>
+          {total > 0 ? `${settings.unit.toUpperCase()} · SQUAT + BENCH + DEADLIFT` : 'TAP A LIFT BELOW TO START'}
+        </div>
+      </div>
+
+      {activeProgram && (() => {
+        const next = getNextWorkout(activeProgram);
+        if (next && next.needsReview) {
+          return <CycleCompleteCard activeProgram={activeProgram} saveActiveProgram={saveActiveProgram} cycleNum={next.cyclesCompleted} />;
+        }
+        return <TodayCard activeProgram={activeProgram} completeProgramDay={completeProgramDay} settings={settings} />;
+      })()}
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginTop: 32 }}>
+        {['squat', 'bench', 'deadlift'].map(lift => (
+          <button key={lift} onClick={() => startEdit(lift)} style={styles.liftCard}>
+            <div style={styles.liftLabel}>{lift === 'deadlift' ? 'DEAD' : lift.slice(0, 5).toUpperCase()}</div>
+            <div style={styles.liftValue}>{oneRMs[lift] || '—'}</div>
+            <div style={{ fontSize: 9, color: '#52525b', letterSpacing: 1 }}>1RM · {settings.unit.toUpperCase()}</div>
+          </button>
+        ))}
+      </div>
+
+      {edit && (
+        <div style={styles.modal} onClick={(e) => { if (e.target === e.currentTarget) setEdit(null); }}>
+          <div style={styles.modalBody}>
+            <div style={{ ...styles.eyebrow, color: '#FF5722' }}>1RM · {edit.toUpperCase()}</div>
+            <input
+              type="number"
+              inputMode="numeric"
+              value={val}
+              onChange={(e) => setVal(e.target.value)}
+              autoFocus
+              style={styles.bigInput}
+              placeholder="0"
+            />
+            <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
+              <button onClick={() => setEdit(null)} style={styles.btnGhost}>Cancel</button>
+              <button onClick={commit} style={styles.btnPrimary}>Save</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div style={{ marginTop: 40 }}>
+        <div style={styles.sectionLabel}>RECENT SESSIONS</div>
+        {recent.length === 0 ? (
+          <div style={styles.emptyCard}>No sessions logged. Hit the Train tab to start.</div>
+        ) : (
+          recent.map(w => (
+            <div key={w.id} style={styles.sessionCard}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 20, letterSpacing: 0.5 }}>{w.exercise.toUpperCase()}</div>
+                <div style={{ fontSize: 11, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>{new Date(w.date).toLocaleDateString()}</div>
+              </div>
+              <div style={{ fontSize: 12, color: '#a1a1aa', marginTop: 4, fontFamily: "'JetBrains Mono', monospace" }}>
+                {w.sets.length} sets · top: {Math.max(...w.sets.map(s => s.weight))} × {w.sets.find(s => s.weight === Math.max(...w.sets.map(s => s.weight)))?.reps}
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+
+      <div style={{ marginTop: 32 }}>
+        <div style={styles.sectionLabel}>MILESTONES</div>
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+          {[1000, 1200, 1500, 1800, 2000].map(t => {
+            const hit = total >= t;
+            return (
+              <div key={t} style={{ ...styles.milestone, opacity: hit ? 1 : 0.4, borderColor: hit ? '#FF5722' : '#27272a' }}>
+                <Trophy size={12} color={hit ? '#FF5722' : '#52525b'} />
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: 13 }}>{t}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ============ MINI BARBELL ============
+function MiniBarbell({ weight, settings }) {
+  const calc = calculatePlates(weight, settings.barWeight, settings.plates);
+  if (!calc) return null;
+  if (calc.plates.length === 0) {
+    return <span style={{ fontSize: 9, color: '#52525b', fontFamily: "'JetBrains Mono', monospace", letterSpacing: 0.5 }}>BAR ONLY</span>;
+  }
+  return (
+    <div style={{ display: 'flex', gap: 1, alignItems: 'center' }}>
+      <div style={{ width: 8, height: 2, background: '#71717a' }} />
+      {calc.plates.map((p, i) => (
+        <div key={i} title={`${p}`} style={{
+          width: Math.max(3, 3 + p * 0.13),
+          height: Math.max(8, 8 + p * 0.20),
+          background: plateColor(p),
+          borderRadius: 1
+        }} />
+      ))}
+      {calc.leftover > 0.01 && (
+        <span style={{ fontSize: 9, color: '#FF5722', marginLeft: 4, fontFamily: "'JetBrains Mono', monospace" }}>−{calc.leftover.toFixed(1)}</span>
+      )}
+    </div>
+  );
+}
+
+// ============ TODAY CARD ============
+function TodayCard({ activeProgram, completeProgramDay, settings }) {
+  const next = getNextWorkout(activeProgram);
+  const tm = next ? activeProgram.trainingMaxes[next.lift.key] : 0;
+  const sets = next ? get531Sets(next.week, tm) : [];
+  const [actualReps, setActualReps] = useState('');
+  const [confirming, setConfirming] = useState(false);
+
+  if (!next) return null;
+
+  const isDeload = next.week === 4;
+  const tplKey = activeProgram.assistanceTemplate || 'none';
+  const tpl = ASSISTANCE_TEMPLATES[tplKey];
+  const assistance = tpl && tpl.build ? tpl.build(next.lift, tm, next.week) : [];
+
+  const onComplete = async () => {
+    const enriched = sets.map((s, i) => ({
+      ...s,
+      actualReps: (s.amrap && actualReps && i === sets.length - 1) ? parseInt(actualReps) : s.reps
+    }));
+    await completeProgramDay(enriched, next.lift.key);
+    setActualReps('');
+    setConfirming(false);
+  };
+
+  return (
+    <div style={{ marginTop: 28, padding: 18, background: '#15161a', border: '1px solid #FF5722', borderRadius: 4 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <div>
+          <div style={{ ...styles.eyebrow, color: '#FF5722' }}>TODAY · 5/3/1</div>
+          <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 28, letterSpacing: 0.5, marginTop: 2 }}>{next.lift.short}</div>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: 10, color: '#71717a', fontFamily: "'JetBrains Mono', monospace", letterSpacing: 1 }}>CYCLE {next.cycle}</div>
+          <div style={{ fontSize: 10, color: '#71717a', fontFamily: "'JetBrains Mono', monospace", letterSpacing: 1 }}>WEEK {next.week}{isDeload ? ' · DELOAD' : ''}</div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: 14 }}>
+        <div style={{ ...styles.eyebrow, fontSize: 9, marginBottom: 6 }}>MAIN WORK</div>
+        {sets.map((s, i) => (
+          <div key={i} style={{ padding: '10px 0', borderBottom: i < sets.length - 1 ? '1px solid #27272a' : 'none' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+              <div style={{ display: 'flex', gap: 12, alignItems: 'baseline' }}>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", color: '#71717a', fontSize: 11, width: 30 }}>{s.pct}%</span>
+                <span style={{ fontFamily: "'Anton', sans-serif", fontSize: 22, letterSpacing: 0 }}>{s.weight}</span>
+                <span style={{ fontSize: 12, color: '#a1a1aa' }}>×</span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: 14, color: s.amrap ? '#FF5722' : '#f5f5f0' }}>
+                  {s.reps}{s.amrap ? '+' : ''}
+                </span>
+              </div>
+            </div>
+            <div style={{ marginTop: 6, paddingLeft: 42 }}>
+              <MiniBarbell weight={s.weight} settings={settings} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {assistance.length > 0 && !isDeload && (
+        <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid #27272a' }}>
+          <div style={{ ...styles.eyebrow, fontSize: 9, marginBottom: 6 }}>ASSISTANCE · {tpl.name.toUpperCase()}</div>
+          {assistance.map((a, i) => (
+            <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', fontFamily: "'JetBrains Mono', monospace", fontSize: 12 }}>
+              <span style={{ color: '#a1a1aa' }}>{a.exercise}</span>
+              <span style={{ color: '#f5f5f0', fontWeight: 700 }}>
+                {a.sets}×{a.reps}{a.weight ? ` @ ${a.weight}` : ''}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {!confirming ? (
+        <button onClick={() => setConfirming(true)} style={{ ...styles.btnPrimary, width: '100%', marginTop: 14 }}>
+          <Check size={16} /> Complete Day
+        </button>
+      ) : (
+        <div style={{ marginTop: 14 }}>
+          {!isDeload && (
+            <>
+              <div style={styles.fieldLabel}>AMRAP SET — REPS COMPLETED</div>
+              <input type="number" inputMode="numeric" value={actualReps} onChange={e => setActualReps(e.target.value)} placeholder={String(sets[sets.length-1].reps)} style={styles.bigField} autoFocus />
+              <div style={{ fontSize: 11, color: '#71717a', marginTop: 6 }}>Last set is AMRAP. Log reps to track progress.</div>
+            </>
+          )}
+          <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+            <button onClick={() => { setConfirming(false); setActualReps(''); }} style={styles.btnGhost}>Cancel</button>
+            <button onClick={onComplete} style={styles.btnPrimary}>Log & Advance</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ============ CYCLE COMPLETE ============
+function CycleCompleteCard({ activeProgram, saveActiveProgram, cycleNum }) {
+  const activeLiftKeys = (LIFT_ORDERS[activeProgram.liftOrder] || LIFT_ORDERS.wendler).days;
+  const amrap = activeProgram.amrapPerformance || {};
+  const cycleAmrap = {};
+  activeLiftKeys.forEach(lift => {
+    const entries = (amrap[lift] || []).filter(e => e.cycle === cycleNum);
+    if (entries.length > 0) {
+      cycleAmrap[lift] = entries.reduce((best, e) => e.est1RM > best.est1RM ? e : best);
+    }
+  });
+
+  const bumpFor = (key) => (key === 'bench' || key === 'press') ? 5 : 10;
+  const suggested = {};
+  activeLiftKeys.forEach(k => {
+    suggested[k] = (activeProgram.trainingMaxes[k] || 0) + bumpFor(k);
+  });
+
+  const [tms, setTms] = useState(suggested);
+
+  const confirm = async () => {
+    await saveActiveProgram({
+      ...activeProgram,
+      trainingMaxes: { ...activeProgram.trainingMaxes, ...tms },
+      lastReviewedCycle: cycleNum
+    });
+  };
+
+  return (
+    <div style={{ marginTop: 28, padding: 18, background: '#15161a', border: '2px solid #FF5722', borderRadius: 4 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <div>
+          <div style={{ ...styles.eyebrow, color: '#FF5722' }}>CYCLE COMPLETE</div>
+          <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 36, letterSpacing: 0.5, marginTop: 2 }}>C{cycleNum} DONE</div>
+        </div>
+        <Trophy size={32} color="#FF5722" />
+      </div>
+
+      <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid #27272a' }}>
+        <div style={styles.sectionLabel}>BEST AMRAP THIS CYCLE</div>
+        {activeLiftKeys.map(lift => {
+          const best = cycleAmrap[lift];
+          if (!best) return (
+            <div key={lift} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', fontSize: 12, color: '#52525b' }}>
+              <span>{SBD_LIFTS[lift].short}</span><span>—</span>
+            </div>
+          );
+          return (
+            <div key={lift} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '8px 0', borderBottom: '1px solid #27272a' }}>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1, color: '#a1a1aa' }}>{SBD_LIFTS[lift].short}</div>
+                <div style={{ fontSize: 10, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>W{best.week} · {best.weight} × {best.reps}</div>
+              </div>
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 22, color: '#FF5722', lineHeight: 1 }}>{best.est1RM}</div>
+                <div style={{ fontSize: 9, color: '#71717a', letterSpacing: 1 }}>EST 1RM</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div style={{ marginTop: 16 }}>
+        <div style={styles.sectionLabel}>NEW TRAINING MAXES · NEXT CYCLE</div>
+        <div style={{ fontSize: 11, color: '#71717a', marginBottom: 12 }}>Standard progression: +10 lb lower, +5 lb upper. Adjust if your AMRAP says otherwise.</div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+          {activeLiftKeys.map(key => (
+            <div key={key}>
+              <div style={{ fontSize: 9, color: '#71717a', letterSpacing: 1.5, fontWeight: 700, marginBottom: 4 }}>
+                {SBD_LIFTS[key].short} · was {activeProgram.trainingMaxes[key] || '—'}
+              </div>
+              <input
+                type="number"
+                inputMode="decimal"
+                value={tms[key] || ''}
+                onChange={e => setTms({ ...tms, [key]: parseFloat(e.target.value) || 0 })}
+                style={{ ...styles.bigField, fontSize: 22, padding: '10px 8px' }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <button onClick={confirm} style={{ ...styles.btnPrimary, width: '100%', marginTop: 16 }}>
+        <Check size={16} /> Begin Cycle {cycleNum + 1}
+      </button>
+    </div>
+  );
+}
+
+// ============ TRAIN ============
+function TrainView({ saveWorkout, workouts, deleteWorkout, oneRMs, settings }) {
+  const [exercise, setExercise] = useState('');
+  const [sets, setSets] = useState([{ weight: '', reps: '', rpe: '' }]);
+  const [picker, setPicker] = useState(false);
+
+  const addSet = () => {
+    const last = sets[sets.length - 1];
+    setSets([...sets, { weight: last.weight, reps: last.reps, rpe: '' }]);
+  };
+
+  const updateSet = (i, field, value) => {
+    const next = [...sets];
+    next[i] = { ...next[i], [field]: value };
+    setSets(next);
+  };
+
+  const removeSet = (i) => setSets(sets.filter((_, idx) => idx !== i));
+
+  const save = () => {
+    if (!exercise) return;
+    const validSets = sets.filter(s => s.weight && s.reps).map(s => ({
+      weight: parseFloat(s.weight),
+      reps: parseInt(s.reps),
+      rpe: s.rpe ? parseFloat(s.rpe) : null
+    }));
+    if (validSets.length === 0) return;
+    saveWorkout({
+      id: Date.now().toString(),
+      date: new Date().toISOString(),
+      exercise,
+      sets: validSets
+    });
+    setExercise('');
+    setSets([{ weight: '', reps: '', rpe: '' }]);
+  };
+
+  return (
+    <div style={{ padding: '24px 20px 100px' }}>
+      <div style={styles.eyebrow}>LOG SESSION</div>
+      <h1 style={styles.h1}>TRAIN</h1>
+
+      <button onClick={() => setPicker(true)} style={{ ...styles.btnSelect, marginTop: 16 }}>
+        <span style={{ color: exercise ? '#f5f5f0' : '#71717a' }}>{exercise || 'Select exercise...'}</span>
+        <ChevronRight size={16} />
+      </button>
+
+      {picker && (
+        <div style={styles.modal} onClick={(e) => { if (e.target === e.currentTarget) setPicker(false); }}>
+          <div style={{ ...styles.modalBody, maxHeight: '70vh', overflow: 'auto' }}>
+            <div style={{ ...styles.eyebrow, color: '#FF5722', marginBottom: 12 }}>SELECT EXERCISE</div>
+            <div style={styles.sectionLabel}>MAIN LIFTS</div>
+            {['Squat', 'Bench Press', 'Deadlift'].map(e => (
+              <button key={e} onClick={() => { setExercise(e); setPicker(false); }} style={styles.pickItem}>
+                <Flame size={14} color="#FF5722" /> {e}
+              </button>
+            ))}
+            {['squat', 'bench', 'deadlift'].map(group => (
+              <React.Fragment key={group}>
+                <div style={styles.sectionLabel}>{group.toUpperCase()} ACCESSORIES</div>
+                {ACCESSORIES[group].map(e => (
+                  <button key={e} onClick={() => { setExercise(e); setPicker(false); }} style={styles.pickItem}>{e}</button>
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {exercise && (
+        <>
+          <div style={{ marginTop: 24, marginBottom: 8, display: 'grid', gridTemplateColumns: '40px 1fr 1fr 1fr 32px', gap: 8, alignItems: 'center' }}>
+            <div style={styles.colHead}>SET</div>
+            <div style={styles.colHead}>WEIGHT</div>
+            <div style={styles.colHead}>REPS</div>
+            <div style={styles.colHead}>RPE</div>
+            <div></div>
+          </div>
+
+          {sets.map((s, i) => (
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: '40px 1fr 1fr 1fr 32px', gap: 8, alignItems: 'center', marginBottom: 8 }}>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: 16, color: '#71717a' }}>{i + 1}</div>
+              <input type="number" inputMode="decimal" value={s.weight} onChange={e => updateSet(i, 'weight', e.target.value)} placeholder="0" style={styles.cellInput} />
+              <input type="number" inputMode="numeric" value={s.reps} onChange={e => updateSet(i, 'reps', e.target.value)} placeholder="0" style={styles.cellInput} />
+              <input type="number" inputMode="decimal" step="0.5" value={s.rpe} onChange={e => updateSet(i, 'rpe', e.target.value)} placeholder="—" style={styles.cellInput} />
+              <button onClick={() => removeSet(i)} style={styles.iconBtn} disabled={sets.length === 1}>
+                <X size={14} color={sets.length === 1 ? '#3f3f46' : '#71717a'} />
+              </button>
+            </div>
+          ))}
+
+          <button onClick={addSet} style={{ ...styles.btnGhost, marginTop: 8, width: '100%' }}>
+            <Plus size={14} /> Add Set
+          </button>
+
+          <button onClick={save} style={{ ...styles.btnPrimary, marginTop: 16, width: '100%' }}>
+            <Check size={16} /> Save Session
+          </button>
+        </>
+      )}
+
+      <RestTimer />
+
+      <div style={{ marginTop: 32 }}>
+        <div style={styles.sectionLabel}>HISTORY</div>
+        {workouts.length === 0 ? (
+          <div style={styles.emptyCard}>No history yet.</div>
+        ) : (
+          workouts.map(w => (
+            <div key={w.id} style={styles.sessionCard}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 8 }}>
+                <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 18 }}>{w.exercise.toUpperCase()}</div>
+                <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+                  <span style={{ fontSize: 11, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>{new Date(w.date).toLocaleDateString()}</span>
+                  <button onClick={() => deleteWorkout(w.id)} style={styles.iconBtn}><Trash2 size={12} color="#71717a" /></button>
+                </div>
+              </div>
+              {w.sets.map((s, i) => (
+                <div key={i} style={{ display: 'flex', gap: 16, fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: '#a1a1aa', padding: '3px 0' }}>
+                  <span style={{ color: '#52525b', width: 20 }}>{i + 1}</span>
+                  <span>{s.weight} × {s.reps}</span>
+                  {s.rpe && <span style={{ color: '#71717a' }}>@ {s.rpe}</span>}
+                </div>
+              ))}
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ============ REST TIMER ============
+function RestTimer() {
+  const [time, setTime] = useState(0);
+  const [running, setRunning] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (running) {
+      ref.current = setInterval(() => {
+        setTime(t => {
+          if (t <= 1) {
+            clearInterval(ref.current);
+            setRunning(false);
+            return 0;
+          }
+          return t - 1;
+        });
+      }, 1000);
+    } else {
+      clearInterval(ref.current);
+    }
+    return () => clearInterval(ref.current);
+  }, [running]);
+
+  const fmt = (s) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  const presets = [60, 120, 180, 300];
+
+  return (
+    <div style={{ marginTop: 24, padding: 16, background: '#15161a', border: '1px solid #27272a', borderRadius: 4 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div>
+          <div style={styles.eyebrow}>REST</div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 32, fontWeight: 700, letterSpacing: 1 }}>{fmt(time)}</div>
+        </div>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button onClick={() => setRunning(!running)} style={styles.timerBtn} disabled={time === 0}>
+            {running ? <Pause size={18} /> : <Play size={18} />}
+          </button>
+          <button onClick={() => { setRunning(false); setTime(0); }} style={styles.timerBtn}>
+            <RotateCcw size={18} />
+          </button>
+        </div>
+      </div>
+      <div style={{ display: 'flex', gap: 6, marginTop: 12 }}>
+        {presets.map(p => (
+          <button key={p} onClick={() => { setTime(p); setRunning(true); }} style={styles.preset}>
+            {p < 60 ? `${p}s` : `${p / 60}m`}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ============ TOOLS ============
+function ToolsView({ settings, saveSettings, oneRMs }) {
+  const [sub, setSub] = useState('1rm');
+  return (
+    <div style={{ padding: '24px 20px 100px' }}>
+      <div style={styles.eyebrow}>CALCULATORS</div>
+      <h1 style={styles.h1}>TOOLS</h1>
+
+      <div style={{ display: 'flex', gap: 0, marginTop: 16, borderBottom: '1px solid #27272a' }}>
+        {[['1rm', '1RM'], ['plate', 'Plates'], ['pct', 'Percentages']].map(([id, label]) => (
+          <button key={id} onClick={() => setSub(id)} style={{ ...styles.subTab, color: sub === id ? '#FF5722' : '#71717a', borderColor: sub === id ? '#FF5722' : 'transparent' }}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {sub === '1rm' && <OneRMCalc />}
+      {sub === 'plate' && <PlateCalc settings={settings} saveSettings={saveSettings} oneRMs={oneRMs} />}
+      {sub === 'pct' && <PercentageCalc />}
+    </div>
+  );
+}
+
+function OneRMCalc() {
+  const [w, setW] = useState('');
+  const [r, setR] = useState('');
+  const weight = parseFloat(w) || 0;
+  const reps = parseInt(r) || 0;
+  const valid = weight > 0 && reps > 0 && reps <= 12;
+
+  return (
+    <div style={{ marginTop: 24 }}>
+      <div style={styles.sectionLabel}>FROM A WORKING SET</div>
+      <div style={{ display: 'flex', gap: 10 }}>
+        <div style={{ flex: 1 }}>
+          <div style={styles.fieldLabel}>WEIGHT</div>
+          <input type="number" inputMode="decimal" value={w} onChange={e => setW(e.target.value)} placeholder="0" style={styles.bigField} />
+        </div>
+        <div style={{ flex: 1 }}>
+          <div style={styles.fieldLabel}>REPS</div>
+          <input type="number" inputMode="numeric" value={r} onChange={e => setR(e.target.value)} placeholder="0" style={styles.bigField} />
+        </div>
+      </div>
+
+      {valid && (
+        <>
+          <div style={{ marginTop: 28, padding: 20, background: '#15161a', border: '1px solid #FF5722', borderRadius: 4 }}>
+            <div style={{ ...styles.eyebrow, color: '#FF5722' }}>ESTIMATED 1RM</div>
+            <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 64, letterSpacing: -1, lineHeight: 1 }}>{calc1RM(weight, reps)}</div>
+          </div>
+
+          <div style={{ marginTop: 16 }}>
+            <div style={styles.sectionLabel}>ALTERNATE FORMULAS</div>
+            <div style={styles.formulaRow}><span>Epley</span><span style={styles.mono}>{calc1RM(weight, reps)}</span></div>
+            <div style={styles.formulaRow}><span>Brzycki</span><span style={styles.mono}>{calcBrzycki(weight, reps)}</span></div>
+            <div style={styles.formulaRow}><span>Lombardi</span><span style={styles.mono}>{calcLombardi(weight, reps)}</span></div>
+          </div>
+
+          <div style={{ marginTop: 16 }}>
+            <div style={styles.sectionLabel}>TRAINING WEIGHTS</div>
+            {[[95, '1RM'], [90, '2-3 reps'], [85, '5 reps'], [80, '6-8 reps'], [75, '8-10 reps'], [70, '10-12 reps'], [65, '12-15 reps']].map(([pct, desc]) => (
+              <div key={pct} style={styles.formulaRow}>
+                <span>{pct}% · <span style={{ color: '#71717a', fontSize: 11 }}>{desc}</span></span>
+                <span style={styles.mono}>{round5(calc1RM(weight, reps) * pct / 100)}</span>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+function PlateCalc({ settings, saveSettings, oneRMs }) {
+  const [target, setTarget] = useState('');
+  const [showEdit, setShowEdit] = useState(false);
+  const [pickLift, setPickLift] = useState(null);
+  const t = parseFloat(target) || 0;
+
+  const hasAnyRM = (oneRMs?.squat || 0) + (oneRMs?.bench || 0) + (oneRMs?.deadlift || 0) > 0;
+
+  const calc = () => {
+    if (t <= settings.barWeight) return null;
+    const perSide = (t - settings.barWeight) / 2;
+    const plates = [...settings.plates].sort((a, b) => b - a);
+    const result = [];
+    let remaining = perSide;
+    for (const p of plates) {
+      while (remaining >= p - 0.001) {
+        result.push(p);
+        remaining -= p;
+      }
+    }
+    return { perSide, plates: result, leftover: remaining };
+  };
+
+  const r = calc();
+  const pColor = (p) => ({ 45: '#1e40af', 35: '#facc15', 25: '#16a34a', 10: '#f5f5f0', 5: '#dc2626', 2.5: '#a1a1aa' }[p] || '#71717a');
+
+  return (
+    <div style={{ marginTop: 24 }}>
+      {hasAnyRM && (
+        <div style={{ marginBottom: 20 }}>
+          <div style={styles.sectionLabel}>QUICK PULL FROM 1RM</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 6 }}>
+            {['squat', 'bench', 'deadlift'].map(lift => (
+              <button
+                key={lift}
+                onClick={() => setPickLift(pickLift === lift ? null : lift)}
+                disabled={!oneRMs[lift]}
+                style={{
+                  ...styles.preset,
+                  padding: '10px 6px',
+                  fontSize: 11,
+                  background: pickLift === lift ? '#FF5722' : 'transparent',
+                  color: !oneRMs[lift] ? '#3f3f46' : (pickLift === lift ? '#0a0a0b' : '#a1a1aa'),
+                  borderColor: pickLift === lift ? '#FF5722' : '#27272a',
+                  letterSpacing: 1
+                }}
+              >
+                {lift === 'deadlift' ? 'DEAD' : lift.slice(0, 5).toUpperCase()}
+              </button>
+            ))}
+          </div>
+          {pickLift && oneRMs[pickLift] > 0 && (
+            <div style={{ display: 'flex', gap: 4, marginTop: 8, flexWrap: 'wrap' }}>
+              {[50, 60, 65, 70, 75, 80, 85, 90, 95, 100].map(pct => (
+                <button
+                  key={pct}
+                  onClick={() => { setTarget(String(round5(oneRMs[pickLift] * pct / 100))); setPickLift(null); }}
+                  style={{ ...styles.preset, padding: '6px 8px', fontSize: 10, flex: 'none', minWidth: 42 }}
+                >
+                  {pct}%
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      <div style={styles.sectionLabel}>TARGET WEIGHT</div>
+      <input type="number" inputMode="decimal" value={target} onChange={e => setTarget(e.target.value)} placeholder="0" style={styles.bigField} />
+
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 24 }}>
+        <div style={styles.sectionLabel}>BAR: {settings.barWeight} {settings.unit}</div>
+        <button onClick={() => setShowEdit(true)} style={styles.btnGhost}>
+          <Settings size={12} /> Edit
+        </button>
+      </div>
+
+      {r && (
+        <div style={{ marginTop: 16, padding: 20, background: '#15161a', border: '1px solid #27272a', borderRadius: 4 }}>
+          <div style={styles.eyebrow}>PER SIDE</div>
+          <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 40, lineHeight: 1, marginBottom: 16 }}>{r.perSide}</div>
+
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center', justifyContent: 'flex-end', borderRight: '4px solid #71717a', paddingRight: 8, minHeight: 60 }}>
+            {r.plates.length === 0 ? (
+              <span style={{ color: '#71717a', fontSize: 12 }}>Just the bar</span>
+            ) : (
+              r.plates.map((p, i) => (
+                <div key={i} style={{
+                  background: pColor(p),
+                  color: p === 35 || p === 10 ? '#0a0a0b' : '#f5f5f0',
+                  padding: '4px 6px',
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontWeight: 700,
+                  fontSize: 11,
+                  width: 28 + p * 0.3,
+                  height: 16 + p * 0.8,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: 2
+                }}>{p}</div>
+              ))
+            )}
+          </div>
+
+          {r.leftover > 0.01 && (
+            <div style={{ marginTop: 12, fontSize: 11, color: '#FF5722' }}>
+              Can't load exactly — {r.leftover.toFixed(2)} {settings.unit} short per side
+            </div>
+          )}
+
+          <div style={{ marginTop: 16, fontSize: 11, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>
+            {r.plates.length > 0 && `${r.plates.join(' + ')} = ${r.perSide} ${settings.unit}/side`}
+          </div>
+        </div>
+      )}
+
+      {showEdit && <PlateEditor settings={settings} saveSettings={saveSettings} close={() => setShowEdit(false)} />}
+    </div>
+  );
+}
+
+function PlateEditor({ settings, saveSettings, close }) {
+  const [bar, setBar] = useState(String(settings.barWeight));
+  const [plates, setPlates] = useState(settings.plates.join(', '));
+
+  const save = () => {
+    const p = plates.split(',').map(x => parseFloat(x.trim())).filter(x => x > 0);
+    saveSettings({ ...settings, barWeight: parseFloat(bar) || 45, plates: p });
+    close();
+  };
+
+  return (
+    <div style={styles.modal} onClick={(e) => { if (e.target === e.currentTarget) close(); }}>
+      <div style={styles.modalBody}>
+        <div style={{ ...styles.eyebrow, color: '#FF5722', marginBottom: 16 }}>EDIT EQUIPMENT</div>
+        <div style={styles.fieldLabel}>BAR WEIGHT</div>
+        <input type="number" value={bar} onChange={e => setBar(e.target.value)} style={styles.bigField} />
+        <div style={{ ...styles.fieldLabel, marginTop: 16 }}>AVAILABLE PLATES (comma-separated)</div>
+        <input value={plates} onChange={e => setPlates(e.target.value)} style={styles.textField} placeholder="45, 35, 25, 10, 5, 2.5" />
+        <div style={{ fontSize: 11, color: '#71717a', marginTop: 6 }}>Enter your actual plate set. Sizes per side, not total.</div>
+        <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
+          <button onClick={close} style={styles.btnGhost}>Cancel</button>
+          <button onClick={save} style={styles.btnPrimary}>Save</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PercentageCalc() {
+  const [oneRM, setOneRM] = useState('');
+  const o = parseFloat(oneRM) || 0;
+  return (
+    <div style={{ marginTop: 24 }}>
+      <div style={styles.sectionLabel}>1RM</div>
+      <input type="number" inputMode="decimal" value={oneRM} onChange={e => setOneRM(e.target.value)} placeholder="0" style={styles.bigField} />
+      {o > 0 && (
+        <div style={{ marginTop: 20 }}>
+          <div style={styles.sectionLabel}>PERCENTAGES</div>
+          {[100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50].map(pct => (
+            <div key={pct} style={styles.formulaRow}>
+              <span>{pct}%</span>
+              <span style={styles.mono}>{round5(o * pct / 100)}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ============ PROGRESS ============
+function ProgressView({ prHistory, workouts, settings }) {
+  const [view, setView] = useState('lifts');
+
+  const data = prHistory.map(p => ({
+    date: new Date(p.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    Squat: p.squat,
+    Bench: p.bench,
+    Deadlift: p.deadlift,
+    Total: p.total
+  }));
+
+  return (
+    <div style={{ padding: '24px 20px 100px' }}>
+      <div style={styles.eyebrow}>NUMBERS GO UP</div>
+      <h1 style={styles.h1}>PROGRESS</h1>
+
+      <div style={{ display: 'flex', gap: 0, marginTop: 16, borderBottom: '1px solid #27272a' }}>
+        {[['lifts', 'Lifts'], ['total', 'Total'], ['vol', 'Volume']].map(([id, label]) => (
+          <button key={id} onClick={() => setView(id)} style={{ ...styles.subTab, color: view === id ? '#FF5722' : '#71717a', borderColor: view === id ? '#FF5722' : 'transparent' }}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 24, height: 280, background: '#15161a', border: '1px solid #27272a', borderRadius: 4, padding: 12 }}>
+        {data.length < 2 ? (
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#71717a', fontSize: 13, textAlign: 'center' }}>
+            Update your 1RMs at least twice<br />to see progression.
+          </div>
+        ) : view === 'total' ? (
+          <ResponsiveContainer>
+            <LineChart data={data}>
+              <CartesianGrid stroke="#27272a" strokeDasharray="3 3" />
+              <XAxis dataKey="date" stroke="#71717a" fontSize={10} />
+              <YAxis stroke="#71717a" fontSize={10} />
+              <Tooltip contentStyle={{ background: '#0a0a0b', border: '1px solid #FF5722', borderRadius: 0 }} />
+              <Line type="monotone" dataKey="Total" stroke="#FF5722" strokeWidth={2.5} dot={{ r: 3, fill: '#FF5722' }} />
+            </LineChart>
+          </ResponsiveContainer>
+        ) : view === 'lifts' ? (
+          <ResponsiveContainer>
+            <LineChart data={data}>
+              <CartesianGrid stroke="#27272a" strokeDasharray="3 3" />
+              <XAxis dataKey="date" stroke="#71717a" fontSize={10} />
+              <YAxis stroke="#71717a" fontSize={10} />
+              <Tooltip contentStyle={{ background: '#0a0a0b', border: '1px solid #27272a', borderRadius: 0 }} />
+              <Legend wrapperStyle={{ fontSize: 11 }} />
+              <Line type="monotone" dataKey="Squat" stroke="#FF5722" strokeWidth={2} dot={false} />
+              <Line type="monotone" dataKey="Bench" stroke="#84cc16" strokeWidth={2} dot={false} />
+              <Line type="monotone" dataKey="Deadlift" stroke="#4f9cf9" strokeWidth={2} dot={false} />
+            </LineChart>
+          </ResponsiveContainer>
+        ) : (
+          <VolumeChart workouts={workouts} />
+        )}
+      </div>
+
+      <div style={{ marginTop: 24 }}>
+        <div style={styles.sectionLabel}>ALL-TIME PRS</div>
+        {prHistory.length === 0 ? (
+          <div style={styles.emptyCard}>Update your 1RMs on Home to track PRs.</div>
+        ) : (
+          ['squat', 'bench', 'deadlift'].map(lift => {
+            const max = Math.max(...prHistory.map(p => p[lift] || 0));
+            const entry = prHistory.find(p => p[lift] === max);
+            return (
+              <div key={lift} style={styles.prRow}>
+                <div>
+                  <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 16, letterSpacing: 0.5 }}>{lift.toUpperCase()}</div>
+                  <div style={{ fontSize: 10, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>{entry ? new Date(entry.date).toLocaleDateString() : '—'}</div>
+                </div>
+                <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 28, color: '#FF5722' }}>{max || '—'}</div>
+              </div>
+            );
+          })
+        )}
+      </div>
+    </div>
+  );
+}
+
+function VolumeChart({ workouts }) {
+  const byDay = {};
+  workouts.forEach(w => {
+    const d = new Date(w.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const vol = w.sets.reduce((sum, s) => sum + (s.weight * s.reps), 0);
+    byDay[d] = (byDay[d] || 0) + vol;
+  });
+  const data = Object.entries(byDay).slice(-14).map(([date, volume]) => ({ date, Volume: Math.round(volume) }));
+
+  if (data.length < 2) {
+    return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#71717a', fontSize: 13 }}>Log sessions to see volume.</div>;
+  }
+
+  return (
+    <ResponsiveContainer>
+      <LineChart data={data}>
+        <CartesianGrid stroke="#27272a" strokeDasharray="3 3" />
+        <XAxis dataKey="date" stroke="#71717a" fontSize={10} />
+        <YAxis stroke="#71717a" fontSize={10} />
+        <Tooltip contentStyle={{ background: '#0a0a0b', border: '1px solid #FF5722', borderRadius: 0 }} />
+        <Line type="monotone" dataKey="Volume" stroke="#FF5722" strokeWidth={2.5} dot={{ r: 2 }} />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+}
+
+// ============ LIBRARY ============
+function LibraryView({ settings, saveSettings, total, oneRMs, activeProgram, saveActiveProgram }) {
+  const [sub, setSub] = useState('programs');
+  return (
+    <div style={{ padding: '24px 20px 100px' }}>
+      <div style={styles.eyebrow}>REFERENCE</div>
+      <h1 style={styles.h1}>LIBRARY</h1>
+
+      <div style={{ display: 'flex', gap: 0, marginTop: 16, borderBottom: '1px solid #27272a', overflowX: 'auto' }}>
+        {[['programs', 'Programs'], ['form', 'Form'], ['challenges', 'Challenges'], ['settings', 'Settings']].map(([id, label]) => (
+          <button key={id} onClick={() => setSub(id)} style={{ ...styles.subTab, color: sub === id ? '#FF5722' : '#71717a', borderColor: sub === id ? '#FF5722' : 'transparent', whiteSpace: 'nowrap' }}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {sub === 'programs' && <ProgramsSection oneRMs={oneRMs} activeProgram={activeProgram} saveActiveProgram={saveActiveProgram} />}
+
+      {sub === 'form' && (
+        <div style={{ marginTop: 24 }}>
+          {['squat', 'bench', 'deadlift'].map(lift => (
+            <div key={lift} style={styles.programCard}>
+              <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 24, letterSpacing: 0.5 }}>{lift.toUpperCase()}</div>
+              <ol style={{ paddingLeft: 0, listStyle: 'none', marginTop: 12 }}>
+                {FORM_TIPS[lift].map((tip, i) => (
+                  <li key={i} style={{ display: 'flex', gap: 12, padding: '8px 0', borderBottom: i < FORM_TIPS[lift].length - 1 ? '1px solid #27272a' : 'none' }}>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", color: '#FF5722', fontWeight: 700, fontSize: 12, minWidth: 18 }}>0{i + 1}</span>
+                    <span style={{ fontSize: 13, color: '#e4e4e7', lineHeight: 1.5 }}>{tip}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {sub === 'challenges' && (
+        <div style={{ marginTop: 24 }}>
+          <div style={{ ...styles.emptyCard, fontSize: 12, marginBottom: 16 }}>
+            Self-tracked milestones. These are personal markers based on your logged 1RMs.
+          </div>
+          {CHALLENGES.map((c, i) => {
+            const hit = typeof c.target === 'number' && total >= c.target;
+            return (
+              <div key={i} style={{ ...styles.programCard, borderColor: hit ? '#FF5722' : '#27272a' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <div>
+                    <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 18, letterSpacing: 0.5 }}>{c.name.toUpperCase()}</div>
+                    <div style={{ fontSize: 11, color: '#FF5722', letterSpacing: 1, marginTop: 2 }}>{c.tier.toUpperCase()}</div>
+                  </div>
+                  {hit && <div style={{ background: '#FF5722', color: '#0a0a0b', padding: '4px 8px', fontSize: 10, fontWeight: 700, letterSpacing: 1 }}>HIT</div>}
+                </div>
+                <div style={{ fontSize: 13, color: '#a1a1aa', marginTop: 10, lineHeight: 1.5 }}>{c.desc}</div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {sub === 'settings' && <SettingsView settings={settings} saveSettings={saveSettings} />}
+    </div>
+  );
+}
+
+// ============ PROGRAMS ============
+function ProgramsSection({ oneRMs, activeProgram, saveActiveProgram }) {
+  const [starting, setStarting] = useState(null);
+
+  if (activeProgram) {
+    return <ActiveProgramView activeProgram={activeProgram} saveActiveProgram={saveActiveProgram} />;
+  }
+
+  return (
+    <div style={{ marginTop: 24 }}>
+      {PROGRAMS.map(p => {
+        const supported = p.id === '531';
+        return (
+          <div key={p.id} style={styles.programCard}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+              <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 22, letterSpacing: 0.5 }}>{p.name.toUpperCase()}</div>
+              <div style={{ fontSize: 11, color: '#71717a', fontFamily: "'JetBrains Mono', monospace" }}>{p.days}d/wk</div>
+            </div>
+            <div style={{ fontSize: 11, color: '#FF5722', letterSpacing: 1, marginTop: 2 }}>BY {p.author.toUpperCase()}</div>
+            <div style={{ fontSize: 13, color: '#a1a1aa', marginTop: 10, lineHeight: 1.5 }}>{p.desc}</div>
+            {supported ? (
+              <button onClick={() => setStarting(p)} style={{ ...styles.btnPrimary, width: '100%', marginTop: 14 }}>
+                Start Program
+              </button>
+            ) : (
+              <div style={{ fontSize: 10, color: '#52525b', letterSpacing: 1.5, marginTop: 14, textTransform: 'uppercase' }}>Reference only · cycle not built-in</div>
+            )}
+          </div>
+        );
+      })}
+      {starting && <StartProgramModal program={starting} oneRMs={oneRMs} saveActiveProgram={saveActiveProgram} close={() => setStarting(null)} />}
+    </div>
+  );
+}
+
+function StartProgramModal({ program, oneRMs, saveActiveProgram, close }) {
+  const initialTMs = {
+    squat: computeTM(oneRMs.squat || 0),
+    bench: computeTM(oneRMs.bench || 0),
+    deadlift: computeTM(oneRMs.deadlift || 0),
+    press: estimatePressTM(computeTM(oneRMs.bench || 0))
+  };
+  const [tms, setTms] = useState(initialTMs);
+  const [skipDeloads, setSkipDeloads] = useState(false);
+  const [assistance, setAssistance] = useState('none');
+  const [liftOrder, setLiftOrder] = useState('wendler');
+
+  const activeLiftKeys = LIFT_ORDERS[liftOrder].days;
+
+  const start = async () => {
+    await saveActiveProgram({
+      id: program.id,
+      name: program.name,
+      trainingMaxes: tms,
+      startDate: new Date().toISOString(),
+      completedDays: [],
+      cycle: 1,
+      skipDeloads,
+      assistanceTemplate: assistance,
+      liftOrder,
+      amrapPerformance: {},
+      lastReviewedCycle: 0
+    });
+    close();
+  };
+
+  return (
+    <div style={styles.modal} onClick={(e) => { if (e.target === e.currentTarget) close(); }}>
+      <div style={{ ...styles.modalBody, maxHeight: '85vh', overflow: 'auto' }}>
+        <div style={{ ...styles.eyebrow, color: '#FF5722' }}>START {program.name.toUpperCase()}</div>
+        <div style={{ fontSize: 12, color: '#a1a1aa', marginTop: 8, lineHeight: 1.5 }}>
+          Training Max = 90% of true 1RM. Pre-filled from your 1RMs. Press is estimated at 65% of bench — adjust if you have a real number.
+        </div>
+
+        <div style={{ marginTop: 20 }}>
+          <div style={styles.sectionLabel}>LIFT ORDER</div>
+          {Object.entries(LIFT_ORDERS).map(([key, o]) => (
+            <button key={key} onClick={() => setLiftOrder(key)} style={{
+              ...styles.programCard, width: '100%', textAlign: 'left', color: '#f5f5f0',
+              borderColor: liftOrder === key ? '#FF5722' : '#27272a',
+              background: liftOrder === key ? '#1a1614' : '#15161a',
+              padding: 12, marginBottom: 6
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ fontWeight: 700, fontSize: 13 }}>{o.name}</div>
+                {liftOrder === key && <Check size={14} color="#FF5722" />}
+              </div>
+              <div style={{ fontSize: 11, color: '#a1a1aa', marginTop: 4, fontFamily: "'JetBrains Mono', monospace" }}>{o.desc}</div>
+            </button>
+          ))}
+        </div>
+
+        {activeLiftKeys.map(key => (
+          <div key={key} style={{ marginTop: 16 }}>
+            <div style={styles.fieldLabel}>{SBD_LIFTS[key].label.toUpperCase()} TM</div>
+            <input type="number" inputMode="decimal" value={tms[key] || ''} onChange={e => setTms({ ...tms, [key]: parseFloat(e.target.value) || 0 })} style={styles.bigField} placeholder="0" />
+          </div>
+        ))}
+
+        <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid #27272a' }}>
+          <div style={styles.sectionLabel}>DELOAD WEEK</div>
+          <div style={{ display: 'flex', gap: 6 }}>
+            <button onClick={() => setSkipDeloads(false)} style={{ ...styles.preset, flex: 1, background: !skipDeloads ? '#FF5722' : 'transparent', color: !skipDeloads ? '#0a0a0b' : '#a1a1aa', borderColor: !skipDeloads ? '#FF5722' : '#27272a' }}>
+              Include · 4 wk
+            </button>
+            <button onClick={() => setSkipDeloads(true)} style={{ ...styles.preset, flex: 1, background: skipDeloads ? '#FF5722' : 'transparent', color: skipDeloads ? '#0a0a0b' : '#a1a1aa', borderColor: skipDeloads ? '#FF5722' : '#27272a' }}>
+              Skip · 3 wk
+            </button>
+          </div>
+          <div style={{ fontSize: 11, color: '#71717a', marginTop: 6 }}>
+            {skipDeloads ? 'Going straight back to Week 1. Use if recovery is solid.' : 'Standard Wendler — deload every 4th week.'}
+          </div>
+        </div>
+
+        <div style={{ marginTop: 20 }}>
+          <div style={styles.sectionLabel}>ASSISTANCE TEMPLATE</div>
+          {Object.entries(ASSISTANCE_TEMPLATES).map(([key, t]) => (
+            <button key={key} onClick={() => setAssistance(key)} style={{
+              ...styles.programCard, width: '100%', textAlign: 'left', cursor: 'pointer', color: '#f5f5f0',
+              borderColor: assistance === key ? '#FF5722' : '#27272a',
+              background: assistance === key ? '#1a1614' : '#15161a',
+              padding: 12, marginBottom: 6
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ fontWeight: 700, fontSize: 13, letterSpacing: 0.5 }}>{t.name}</div>
+                {assistance === key && <Check size={14} color="#FF5722" />}
+              </div>
+              <div style={{ fontSize: 11, color: '#a1a1aa', marginTop: 4, lineHeight: 1.4 }}>{t.desc}</div>
+            </button>
+          ))}
+        </div>
+
+        <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
+          <button onClick={close} style={styles.btnGhost}>Cancel</button>
+          <button onClick={start} style={styles.btnPrimary} disabled={!tms.squat && !tms.bench && !tms.deadlift}>Begin Cycle</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ActiveProgramView({ activeProgram, saveActiveProgram }) {
+  const next = getNextWorkout(activeProgram);
+  const [confirmEnd, setConfirmEnd] = useState(false);
+  const [editingSettings, setEditingSettings] = useState(false);
+  const completed = activeProgram.completedDays || [];
+  const amrap = activeProgram.amrapPerformance || {};
+  const activeLiftKeys = (LIFT_ORDERS[activeProgram.liftOrder] || LIFT_ORDERS.wendler).days;
+  const orderName = (LIFT_ORDERS[activeProgram.liftOrder] || LIFT_ORDERS.wendler).name;
+
+  const bestEst = {};
+  activeLiftKeys.forEach(lift => {
+    const entries = amrap[lift] || [];
+    if (entries.length > 0) {
+      bestEst[lift] = entries.reduce((best, e) => e.est1RM > best.est1RM ? e : best);
+    }
+  });
+
+  const exportAmrapCSV = () => {
+    const rows = [['Lift', 'Cycle', 'Week', 'Weight', 'Reps', 'Est_1RM', 'Date']];
+    activeLiftKeys.forEach(lift => {
+      (amrap[lift] || []).forEach(e => {
+        rows.push([SBD_LIFTS[lift].label, e.cycle, e.week, e.weight, e.reps, e.est1RM, new Date(e.date).toISOString().split('T')[0]]);
+      });
+    });
+    const csv = rows.map(r => r.join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `iron-amrap-${new Date().toISOString().split('T')[0]}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const hasAmrapData = Object.values(amrap).some(arr => arr && arr.length > 0);
+
+  return (
+    <div style={{ marginTop: 24 }}>
+      <div style={{ ...styles.programCard, borderColor: '#FF5722' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+          <div>
+            <div style={{ ...styles.eyebrow, color: '#FF5722' }}>ACTIVE</div>
+            <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 28, letterSpacing: 0.5 }}>{activeProgram.name.toUpperCase()}</div>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 28, color: '#FF5722' }}>C{next.cycle}</div>
+            <div style={{ fontSize: 10, color: '#71717a', fontFamily: "'JetBrains Mono', monospace", letterSpacing: 1 }}>WEEK {next.week}/{next.weeksPerCycle}</div>
+          </div>
+        </div>
+        <div style={{ marginTop: 12, fontSize: 12, color: '#a1a1aa' }}>
+          {completed.length} sessions · started {new Date(activeProgram.startDate).toLocaleDateString()}
+        </div>
+        <div style={{ marginTop: 8, fontSize: 11, color: '#71717a', fontFamily: "'JetBrains Mono', monospace", lineHeight: 1.5 }}>
+          {orderName.toUpperCase()} · {activeProgram.skipDeloads ? 'NO DELOADS' : 'DELOADS ON'}<br />
+          ASSISTANCE: {(ASSISTANCE_TEMPLATES[activeProgram.assistanceTemplate || 'none'].name).toUpperCase()}
+        </div>
+      </div>
+
+      <div style={styles.sectionLabel}>TRAINING MAXES</div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+        {activeLiftKeys.map(key => (
+          <div key={key} style={{ background: '#15161a', border: '1px solid #27272a', padding: 12 }}>
+            <div style={{ fontSize: 9, color: '#71717a', letterSpacing: 1.5, fontWeight: 700 }}>{SBD_LIFTS[key].short}</div>
+            <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 22, marginTop: 2 }}>{activeProgram.trainingMaxes[key] || '—'}</div>
+            {bestEst[key] && (
+              <div style={{ fontSize: 10, color: '#FF5722', fontFamily: "'JetBrains Mono', monospace", marginTop: 4 }}>
+                est. 1RM {bestEst[key].est1RM}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {hasAmrapData && (
+        <>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginTop: 16, marginBottom: 12 }}>
+            <div style={{ ...styles.sectionLabel, marginTop: 0, marginBottom: 0 }}>AMRAP HISTORY</div>
+            <button onClick={exportAmrapCSV} style={{ ...styles.btnGhost, padding: '6px 10px', fontSize: 10 }}>Export CSV</button>
+          </div>
+          {activeLiftKeys.map(lift => {
+            const entries = (amrap[lift] || []).slice(-4).reverse();
+            if (entries.length === 0) return null;
+            return (
+              <div key={lift} style={{ ...styles.programCard, padding: 14 }}>
+                <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 14, letterSpacing: 0.5, marginBottom: 8 }}>{SBD_LIFTS[lift].short}</div>
+                {entries.map((e, i) => (
+                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '4px 0', fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>
+                    <span style={{ color: '#71717a' }}>C{e.cycle}W{e.week}</span>
+                    <span style={{ color: '#a1a1aa' }}>{e.weight} × {e.reps}</span>
+                    <span style={{ color: '#FF5722', fontWeight: 700 }}>1RM {e.est1RM}</span>
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+        </>
+      )}
+
+      <div style={styles.sectionLabel}>THIS WEEK</div>
+      {next.days.map((day, i) => {
+        const isCompletedThisWeek = completed.some(c => c.cycle === next.cycle && c.week === next.week && c.dayIndex === i);
+        const isNext = !isCompletedThisWeek && i === next.dayIndex;
+        const tm = activeProgram.trainingMaxes[day.key];
+        const sets = get531Sets(next.week, tm);
+        return (
+          <div key={i} style={{ ...styles.programCard, borderColor: isNext ? '#FF5722' : '#27272a', opacity: isCompletedThisWeek ? 0.5 : 1 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+              <div style={{ fontFamily: "'Anton', sans-serif", fontSize: 18, letterSpacing: 0.5 }}>
+                DAY {i + 1} · {day.short}
+              </div>
+              {isCompletedThisWeek && <Check size={14} color="#84cc16" />}
+              {isNext && <div style={{ fontSize: 9, color: '#FF5722', fontWeight: 700, letterSpacing: 1.5 }}>NEXT</div>}
+            </div>
+            <div style={{ marginTop: 8 }}>
+              {sets.map((s, j) => (
+                <div key={j} style={{ display: 'flex', gap: 10, fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: '#a1a1aa', padding: '2px 0' }}>
+                  <span style={{ color: '#52525b', width: 32 }}>{s.pct}%</span>
+                  <span style={{ color: '#f5f5f0', fontWeight: 700 }}>{s.weight}</span>
+                  <span>×</span>
+                  <span style={{ color: s.amrap ? '#FF5722' : '#a1a1aa' }}>{s.reps}{s.amrap ? '+' : ''}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+
+      <div style={{ marginTop: 24, display: 'flex', gap: 8 }}>
+        <button onClick={() => setEditingSettings(true)} style={styles.btnGhost}><Settings size={12} /> Adjust</button>
+        {!confirmEnd && <button onClick={() => setConfirmEnd(true)} style={styles.btnGhost}>End Program</button>}
+      </div>
+
+      {confirmEnd && (
+        <div style={{ marginTop: 12, background: '#15161a', border: '1px solid #FF5722', padding: 14 }}>
+          <div style={{ fontSize: 13, color: '#f5f5f0', marginBottom: 12 }}>End program? Progress and AMRAP history will be cleared.</div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button onClick={() => setConfirmEnd(false)} style={styles.btnGhost}>Cancel</button>
+            <button onClick={() => { saveActiveProgram(null); setConfirmEnd(false); }} style={styles.btnPrimary}>End</button>
+          </div>
+        </div>
+      )}
+
+      {editingSettings && <AdjustProgramModal activeProgram={activeProgram} saveActiveProgram={saveActiveProgram} close={() => setEditingSettings(false)} />}
+    </div>
+  );
+}
+
+function AdjustProgramModal({ activeProgram, saveActiveProgram, close }) {
+  const [skip, setSkip] = useState(!!activeProgram.skipDeloads);
+  const [tplKey, setTplKey] = useState(activeProgram.assistanceTemplate || 'none');
+  const [order, setOrder] = useState(activeProgram.liftOrder || 'wendler');
+  const [tms, setTms] = useState({ ...activeProgram.trainingMaxes });
+
+  const save = async () => {
+    await saveActiveProgram({ ...activeProgram, skipDeloads: skip, assistanceTemplate: tplKey, liftOrder: order, trainingMaxes: tms });
+    close();
+  };
+
+  return (
+    <div style={styles.modal} onClick={(e) => { if (e.target === e.currentTarget) close(); }}>
+      <div style={{ ...styles.modalBody, maxHeight: '85vh', overflow: 'auto' }}>
+        <div style={{ ...styles.eyebrow, color: '#FF5722' }}>ADJUST PROGRAM</div>
+
+        <div style={{ marginTop: 16 }}>
+          <div style={styles.sectionLabel}>LIFT ORDER</div>
+          {Object.entries(LIFT_ORDERS).map(([key, o]) => (
+            <button key={key} onClick={() => setOrder(key)} style={{
+              ...styles.programCard, width: '100%', textAlign: 'left', color: '#f5f5f0',
+              borderColor: order === key ? '#FF5722' : '#27272a',
+              background: order === key ? '#1a1614' : '#15161a',
+              padding: 12, marginBottom: 6
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ fontWeight: 700, fontSize: 13 }}>{o.name}</div>
+                {order === key && <Check size={14} color="#FF5722" />}
+              </div>
+              <div style={{ fontSize: 11, color: '#a1a1aa', marginTop: 4, fontFamily: "'JetBrains Mono', monospace" }}>{o.desc}</div>
+            </button>
+          ))}
+          {order !== activeProgram.liftOrder && (
+            <div style={{ fontSize: 11, color: '#FF5722', marginTop: 6 }}>⚠ Changing order mid-cycle re-maps day indices.</div>
+          )}
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <div style={styles.sectionLabel}>TRAINING MAXES</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+            {LIFT_ORDERS[order].days.map(key => (
+              <div key={key}>
+                <div style={{ fontSize: 9, color: '#71717a', letterSpacing: 1.5, fontWeight: 700, marginBottom: 4 }}>{SBD_LIFTS[key].short}</div>
+                <input type="number" value={tms[key] || ''} onChange={e => setTms({ ...tms, [key]: parseFloat(e.target.value) || 0 })} style={{ ...styles.bigField, fontSize: 20, padding: '8px' }} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <div style={styles.sectionLabel}>DELOAD WEEK</div>
+          <div style={{ display: 'flex', gap: 6 }}>
+            <button onClick={() => setSkip(false)} style={{ ...styles.preset, flex: 1, background: !skip ? '#FF5722' : 'transparent', color: !skip ? '#0a0a0b' : '#a1a1aa', borderColor: !skip ? '#FF5722' : '#27272a' }}>Include</button>
+            <button onClick={() => setSkip(true)} style={{ ...styles.preset, flex: 1, background: skip ? '#FF5722' : 'transparent', color: skip ? '#0a0a0b' : '#a1a1aa', borderColor: skip ? '#FF5722' : '#27272a' }}>Skip</button>
+          </div>
+        </div>
+
+        <div style={{ marginTop: 16 }}>
+          <div style={styles.sectionLabel}>ASSISTANCE</div>
+          {Object.entries(ASSISTANCE_TEMPLATES).map(([key, t]) => (
+            <button key={key} onClick={() => setTplKey(key)} style={{
+              ...styles.programCard, width: '100%', textAlign: 'left', color: '#f5f5f0',
+              borderColor: tplKey === key ? '#FF5722' : '#27272a',
+              background: tplKey === key ? '#1a1614' : '#15161a',
+              padding: 12, marginBottom: 6
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ fontWeight: 700, fontSize: 13 }}>{t.name}</div>
+                {tplKey === key && <Check size={14} color="#FF5722" />}
+              </div>
+              <div style={{ fontSize: 11, color: '#a1a1aa', marginTop: 4 }}>{t.desc}</div>
+            </button>
+          ))}
+        </div>
+
+        <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
+          <button onClick={close} style={styles.btnGhost}>Cancel</button>
+          <button onClick={save} style={styles.btnPrimary}>Save</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SettingsView({ settings, saveSettings }) {
+  const [bar, setBar] = useState(String(settings.barWeight));
+  const [plates, setPlates] = useState(settings.plates.join(', '));
+  const [bw, setBw] = useState(String(settings.bodyweight || ''));
+  const [unit, setUnit] = useState(settings.unit);
+
+  const save = () => {
+    const p = plates.split(',').map(x => parseFloat(x.trim())).filter(x => x > 0);
+    saveSettings({ ...settings, barWeight: parseFloat(bar) || 45, plates: p, bodyweight: parseFloat(bw) || 0, unit });
+  };
+
+  return (
+    <div style={{ marginTop: 24 }}>
+      <div style={styles.fieldLabel}>UNIT</div>
+      <div style={{ display: 'flex', gap: 6 }}>
+        {['lb', 'kg'].map(u => (
+          <button key={u} onClick={() => setUnit(u)} style={{ ...styles.preset, flex: 1, background: unit === u ? '#FF5722' : 'transparent', color: unit === u ? '#0a0a0b' : '#a1a1aa', borderColor: unit === u ? '#FF5722' : '#27272a' }}>
+            {u.toUpperCase()}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ ...styles.fieldLabel, marginTop: 16 }}>BODYWEIGHT</div>
+      <input type="number" value={bw} onChange={e => setBw(e.target.value)} style={styles.bigField} placeholder="0" />
+
+      <div style={{ ...styles.fieldLabel, marginTop: 16 }}>BAR WEIGHT</div>
+      <input type="number" value={bar} onChange={e => setBar(e.target.value)} style={styles.bigField} />
+
+      <div style={{ ...styles.fieldLabel, marginTop: 16 }}>AVAILABLE PLATES</div>
+      <input value={plates} onChange={e => setPlates(e.target.value)} style={styles.textField} placeholder="45, 35, 25, 10, 5, 2.5" />
+      <div style={{ fontSize: 11, color: '#71717a', marginTop: 6 }}>Comma-separated. Sizes per plate, not total.</div>
+
+      <button onClick={save} style={{ ...styles.btnPrimary, marginTop: 20, width: '100%' }}>
+        <Check size={16} /> Save Settings
+      </button>
+    </div>
+  );
+}
+
+// ============ STYLES ============
+const globalCSS = `
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { background: #0a0a0b; font-family: 'Inter', system-ui, sans-serif; }
+  input { -webkit-appearance: none; appearance: none; }
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type=number] { -moz-appearance: textfield; }
+  button { cursor: pointer; font-family: inherit; }
+`;
+
+const styles = {
+  app: { background: '#0a0a0b', color: '#f5f5f0', minHeight: '100vh', fontFamily: "'Inter', system-ui, sans-serif", position: 'relative' },
+  main: { paddingBottom: 80 },
+  nav: {
+    position: 'fixed', bottom: 0, left: 0, right: 0,
+    background: '#0a0a0b', borderTop: '1px solid #27272a',
+    display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)',
+    padding: '10px 0 14px', zIndex: 100
+  },
+  navBtn: { background: 'transparent', border: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: 4, transition: 'color 0.15s' },
+  eyebrow: { fontSize: 10, fontWeight: 700, letterSpacing: 2.5, color: '#71717a', textTransform: 'uppercase', marginBottom: 8 },
+  bigTotal: { fontFamily: "'Anton', sans-serif", fontSize: 120, lineHeight: 0.9, letterSpacing: -3, color: '#f5f5f0' },
+  h1: { fontFamily: "'Anton', sans-serif", fontSize: 56, lineHeight: 1, letterSpacing: -1, fontWeight: 400 },
+  liftCard: { background: '#15161a', border: '1px solid #27272a', borderRadius: 0, padding: '16px 10px', color: '#f5f5f0', textAlign: 'left', cursor: 'pointer', transition: 'all 0.15s' },
+  liftLabel: { fontSize: 10, fontWeight: 700, letterSpacing: 1.5, color: '#71717a' },
+  liftValue: { fontFamily: "'Anton', sans-serif", fontSize: 36, lineHeight: 1.1, letterSpacing: -0.5, marginTop: 4, color: '#f5f5f0' },
+  sectionLabel: { fontSize: 10, fontWeight: 700, letterSpacing: 2, color: '#71717a', textTransform: 'uppercase', marginBottom: 12, marginTop: 16 },
+  emptyCard: { background: '#15161a', border: '1px dashed #27272a', padding: 20, fontSize: 13, color: '#71717a', textAlign: 'center' },
+  sessionCard: { background: '#15161a', border: '1px solid #27272a', padding: 14, marginBottom: 8 },
+  milestone: { background: '#15161a', border: '1px solid', padding: '6px 10px', display: 'flex', gap: 6, alignItems: 'center' },
+  modal: { position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 200, padding: 20 },
+  modalBody: { background: '#15161a', border: '1px solid #27272a', padding: 24, width: '100%', maxWidth: 380 },
+  bigInput: { width: '100%', background: '#0a0a0b', border: '1px solid #27272a', borderBottom: '2px solid #FF5722', color: '#f5f5f0', padding: '16px 12px', fontSize: 48, fontFamily: "'Anton', sans-serif", letterSpacing: -1, textAlign: 'center', outline: 'none', marginTop: 12 },
+  bigField: { width: '100%', background: '#0a0a0b', border: '1px solid #27272a', color: '#f5f5f0', padding: '14px 12px', fontSize: 32, fontFamily: "'Anton', sans-serif", letterSpacing: 0, outline: 'none' },
+  textField: { width: '100%', background: '#0a0a0b', border: '1px solid #27272a', color: '#f5f5f0', padding: '12px', fontSize: 14, fontFamily: "'Inter', sans-serif", outline: 'none' },
+  fieldLabel: { fontSize: 10, fontWeight: 700, letterSpacing: 2, color: '#71717a', marginBottom: 6 },
+  btnPrimary: { background: '#FF5722', color: '#0a0a0b', border: 'none', padding: '14px 24px', fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: 13, letterSpacing: 1, textTransform: 'uppercase', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 },
+  btnGhost: { background: 'transparent', color: '#a1a1aa', border: '1px solid #27272a', padding: '10px 16px', fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 12, letterSpacing: 1, textTransform: 'uppercase', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 },
+  btnSelect: { width: '100%', background: '#15161a', border: '1px solid #27272a', color: '#f5f5f0', padding: '16px', fontSize: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', textAlign: 'left' },
+  pickItem: { background: '#0a0a0b', border: 'none', borderBottom: '1px solid #27272a', color: '#f5f5f0', padding: '14px 4px', fontSize: 14, textAlign: 'left', width: '100%', display: 'flex', alignItems: 'center', gap: 10 },
+  colHead: { fontSize: 9, fontWeight: 700, letterSpacing: 1.5, color: '#52525b', textAlign: 'center' },
+  cellInput: { background: '#15161a', border: '1px solid #27272a', color: '#f5f5f0', padding: '12px 8px', fontSize: 18, fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, textAlign: 'center', outline: 'none', width: '100%' },
+  iconBtn: { background: 'transparent', border: 'none', padding: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' },
+  timerBtn: { background: '#0a0a0b', border: '1px solid #FF5722', color: '#FF5722', padding: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' },
+  preset: { background: 'transparent', border: '1px solid #27272a', color: '#a1a1aa', padding: '6px 10px', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, flex: 1, fontFamily: "'JetBrains Mono', monospace" },
+  subTab: { background: 'transparent', border: 'none', borderBottom: '2px solid', color: '#71717a', padding: '12px 16px', fontSize: 12, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase' },
+  formulaRow: { display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #27272a', fontSize: 13, color: '#e4e4e7' },
+  mono: { fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, color: '#FF5722' },
+  prRow: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 16px', background: '#15161a', border: '1px solid #27272a', marginBottom: 8 },
+  programCard: { background: '#15161a', border: '1px solid #27272a', padding: 18, marginBottom: 10 }
+};
+
+
+  ReactDOM.render(React.createElement(App), document.getElementById('root'));
+  </script>
+</body>
+</html>
